@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Reverse Chrome Tabs Order",
+  "version": "1.0.0",
+  "description": "Reverse the current order of tabs in the Chrome window.",
+  "icons": 
+  {
+  },
+  "permissions": ["tabs"],
+  "background": {
+    "scripts": ["reverse.js"]
+  },
+  "browser_action": {
+    "default_title": "Reverse Tabs Order"
+  },
+  "commands": {
+	"toggle-feature-foo": {
+	  "suggested_key": {
+		"default": "Alt+R"
+	  },
+	  "description": "Reverse tab order"
+	}
+  }
+}
+
